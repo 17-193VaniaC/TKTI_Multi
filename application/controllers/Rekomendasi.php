@@ -214,11 +214,11 @@ class Rekomendasi extends CI_Controller {
 
 			$jumlah_normalisasi = $normalisasi_level0 + $normalisasi_level1 + $normalisasi_level2 + $normalisasi_level3 + $normalisasi_level4 + $normalisasi_level5;
 			// echo "Jumlah normalisasi: " . $jumlah_normalisasi . "<br>";
-			$kontribusi_level1 = $normalisasi_level1 / 1;
-			$kontribusi_level2 = $normalisasi_level2 / 2;
-			$kontribusi_level3 = $normalisasi_level3 / 3;
-			$kontribusi_level4 = $normalisasi_level4 / 4;
-			$kontribusi_level5 = $normalisasi_level5 / 5;
+			$kontribusi_level1 = $normalisasi_level1 * 1;
+			$kontribusi_level2 = $normalisasi_level2 * 2;
+			$kontribusi_level3 = $normalisasi_level3 * 3;
+			$kontribusi_level4 = $normalisasi_level4 * 4;
+			$kontribusi_level5 = $normalisasi_level5 * 5;
 			$jumlah_kontribusi = $kontribusi_level0 + $kontribusi_level1 + $kontribusi_level2 + $kontribusi_level3 + $kontribusi_level4 + $kontribusi_level5;
 			// echo "Jumlah kontribusi: " . $jumlah_kontribusi . "<br>";
 			$nilai_maturity_level = $jumlah_kontribusi;
